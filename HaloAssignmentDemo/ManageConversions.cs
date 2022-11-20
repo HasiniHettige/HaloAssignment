@@ -43,7 +43,8 @@ namespace HaloAssignmentDemo
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                //TODO : Implement proper error handling
+                throw new Exception("Text to Number conversion failed " + ex.Message);
             }            
         }
     }

@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace HaloAssignmentUnitTest
 {
-    public class UnitTest1
+    public class ManageConversionsTest
     {
         [Fact]
         public void GetWholeNumbers_Input1_Success()
@@ -123,6 +123,40 @@ namespace HaloAssignmentUnitTest
             var result = ManageConversions.GetWholeNumbers("This string has no numbers");
 
             Assert.Equal(wholeNumbers.ToImmutableList(), result);
+        }
+
+        [Fact]
+        public void GetWholeNumbers_Input10_Success()
+        {
+            List<long> wholeNumbers = new();
+
+            //Input : string with comma separated numbers, returns a list of whole numbers
+            var result = ManageConversions.GetWholeNumbers("This string contains 1234, 345345.5, 345349, 0, -345345");
+
+            wholeNumbers.Add(1234);
+            wholeNumbers.Add(345346);
+            wholeNumbers.Add(345349);
+            wholeNumbers.Add(0);
+            wholeNumbers.Add(-345345);
+
+            Assert.Equal(wholeNumbers, result);
+        }
+
+        [Fact]
+        public void GetWholeNumbers_Input11_Success()
+        {
+            List<long> wholeNumbers = new();
+
+            //Input : string with many numbers separated by spaces, returns a list of whole numbers
+            var result = ManageConversions.GetWholeNumbers("This string contains 1234 345345.5 345349 0 -345345");
+
+            wholeNumbers.Add(1234);
+            wholeNumbers.Add(345346);
+            wholeNumbers.Add(345349);
+            wholeNumbers.Add(0);
+            wholeNumbers.Add(-345345);
+
+            Assert.Equal(wholeNumbers, result);
         }
     }
 }

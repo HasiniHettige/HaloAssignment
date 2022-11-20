@@ -1,3 +1,5 @@
+using HaloAssignmentDemo;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -14,5 +16,15 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+//API EndPoint
+app.MapGet("/ManageConversions/GetWholeNumbers{text}", (string text) =>
+{
+    var output = ManageConversions.GetWholeNumbers(text);
+
+    return output;
+
+})
+.WithName("GetWholeNumber2");
 
 app.Run();

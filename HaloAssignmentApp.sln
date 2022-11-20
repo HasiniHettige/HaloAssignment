@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaloAssignmentDemo", "HaloAssignmentDemo\HaloAssignmentDemo.csproj", "{2500AB4E-24FF-436A-BCBF-FDCF04BFA513}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaloAssignmentUnitTest", "HaloAssignmentUnitTest\HaloAssignmentUnitTest.csproj", "{EC6FA7C5-C80A-4A44-B3FC-C51B0658C58E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2500AB4E-24FF-436A-BCBF-FDCF04BFA513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2500AB4E-24FF-436A-BCBF-FDCF04BFA513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2500AB4E-24FF-436A-BCBF-FDCF04BFA513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2500AB4E-24FF-436A-BCBF-FDCF04BFA513}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6FA7C5-C80A-4A44-B3FC-C51B0658C58E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6FA7C5-C80A-4A44-B3FC-C51B0658C58E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6FA7C5-C80A-4A44-B3FC-C51B0658C58E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6FA7C5-C80A-4A44-B3FC-C51B0658C58E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1470ACDB-349C-42D9-9978-5EA7B544FCDA}
+	EndGlobalSection
+EndGlobal

@@ -25,6 +25,6 @@ app.MapGet("/ManageConversions/GetWholeNumbers{text}", (string text) =>
     return output;
 
 })
-.WithName("GetWholeNumber2");
+.WithName("GetWholeNumbers");
 
 app.Run();
